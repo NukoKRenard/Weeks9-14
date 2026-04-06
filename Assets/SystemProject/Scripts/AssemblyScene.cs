@@ -5,7 +5,7 @@ public class AssemblyScene : MonoBehaviour
 {
     public List<GameObject> components;
     public GameObject selectedComponent;
-    public List<bool> goalsCompleted;
+    public GoalTreeBranch goalRoot;
     public bool clickedThisFrame = false; 
    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -41,5 +41,10 @@ public class AssemblyScene : MonoBehaviour
     void Update()
     {
 	    clickedThisFrame = false;
+
+	    if (goalRoot.completed)
+	    {
+		    Debug.Log("Horay!");
+	    }
     }
 }

@@ -21,7 +21,6 @@ public class InteractWithChildren : MonoBehaviour
 		   cod = collectible.GetComponent<CollectibleObject>();
 		   if (cod.renderer.bounds.Contains(interactionPosition) && downThisFrame)
 		   {
-			   cod.addedItem.transform.position = Random.insideUnitCircle*5;
 			   assemblyScene.components.Add(cod.addedItem);
 			   cod.addedItem.SetActive(true);
 			   interactables.Remove(collectible);

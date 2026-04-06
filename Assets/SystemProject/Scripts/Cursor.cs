@@ -16,7 +16,7 @@ public class Cursor : MonoBehaviour
     }
 
     public void MoveCursor(InputAction.CallbackContext movement) {
-	    transform.position += (Vector3)movement.ReadValue<Vector2>()*Time.deltaTime;
+	    transform.position = (Vector2)Camera.main.ScreenToWorldPoint(movement.ReadValue<Vector2>());
 	    Vector2 bottomLeft = Camera.main.ScreenToWorldPoint(new Vector2(0,0));
 	    Vector2 topRight = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
 

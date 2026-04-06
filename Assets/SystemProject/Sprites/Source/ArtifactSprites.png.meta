@@ -156,7 +156,7 @@ TextureImporter:
         width: 210
         height: 328
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -170,28 +170,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArtifactSprites_1
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 678
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4bee0850633d0dd10800000000000000
-      internalID: 2148449251229757108
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: ArtifactSprites_2
       rect:
         serializedVersion: 2
@@ -200,7 +178,7 @@ TextureImporter:
         width: 242
         height: 301
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -222,7 +200,7 @@ TextureImporter:
         width: 75
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -244,7 +222,7 @@ TextureImporter:
         width: 63
         height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -266,7 +244,7 @@ TextureImporter:
         width: 206
         height: 164
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -280,50 +258,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArtifactSprites_6
-      rect:
-        serializedVersion: 2
-        x: 268
-        y: 341
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0e0981414bcf2c6e0800000000000000
-      internalID: -1818613449142791968
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ArtifactSprites_7
-      rect:
-        serializedVersion: 2
-        x: 853
-        y: 346
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 926557169be44c1f0800000000000000
-      internalID: -1025608257022634455
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: ArtifactSprites_8
       rect:
         serializedVersion: 2
@@ -332,7 +266,7 @@ TextureImporter:
         width: 207
         height: 277
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -354,7 +288,7 @@ TextureImporter:
         width: 120
         height: 68
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -368,37 +302,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArtifactSprites_10
-      rect:
-        serializedVersion: 2
-        x: 727
-        y: 185
-        width: 7
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a1a5045a69661dd30800000000000000
-      internalID: 4454454303649716762
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: ArtifactSprites_11
       rect:
         serializedVersion: 2
-        x: 742
-        y: 191
-        width: 164
-        height: 136
+        x: 732
+        y: 96
+        width: 195
+        height: 237
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -412,111 +324,23 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ArtifactSprites_12
+      name: ArtifactSprites_1
       rect:
         serializedVersion: 2
-        x: 779
-        y: 72
-        width: 144
-        height: 172
+        x: 459
+        y: 116
+        width: 164
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7029ef4cb05bbfb20800000000000000
-      internalID: 3169325824939561479
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ArtifactSprites_13
-      rect:
-        serializedVersion: 2
-        x: 481
-        y: 121
-        width: 121
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 36ce6d5e4533c2a30800000000000000
-      internalID: 4191781792901426275
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ArtifactSprites_14
-      rect:
-        serializedVersion: 2
-        x: 178
-        y: 67
-        width: 29
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3d2a1b9f797484f80800000000000000
-      internalID: -8122163209907887405
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ArtifactSprites_15
-      rect:
-        serializedVersion: 2
-        x: 430
-        y: 57
-        width: 29
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bc1c8e1dafa5b9170800000000000000
-      internalID: 8186236780986024395
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ArtifactSprites_16
-      rect:
-        serializedVersion: 2
-        x: 204
-        y: 16
-        width: 21
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 26ff1858c1fe087d0800000000000000
-      internalID: -2918069652758069406
+      spriteID: b5e9dd0b49f2b1352ab4326f6b557e50
+      internalID: 2148449251229757108
       vertices: []
       indices: 
       edges: []
@@ -525,7 +349,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 62d5f8c8948b6012f88d19342c237026
     internalID: 0
     vertices: []
     indices: 

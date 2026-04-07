@@ -606,7 +606,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 10000
   m_TargetDisplay: 0
 --- !u!1 &215343789
 GameObject:
@@ -2490,11 +2490,11 @@ PrefabInstance:
       objectReference: {fileID: 310141159}
     - target: {fileID: 7235246610669261704, guid: 66d1416e74ffdd75a8b256de74270d0c, type: 3}
       propertyPath: userResponded
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7235246610669261704, guid: 66d1416e74ffdd75a8b256de74270d0c, type: 3}
       propertyPath: vriekPoses.Array.size
-      value: 16
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7235246610669261704, guid: 66d1416e74ffdd75a8b256de74270d0c, type: 3}
       propertyPath: 'vriekPoses.Array.data[0]'
@@ -2527,7 +2527,7 @@ PrefabInstance:
     - target: {fileID: 7235246610669261704, guid: 66d1416e74ffdd75a8b256de74270d0c, type: 3}
       propertyPath: 'vriekPoses.Array.data[7]'
       value: 
-      objectReference: {fileID: -7427728680982266421, guid: 1a6511e6fdd7e89b481fff3e211b1928, type: 3}
+      objectReference: {fileID: -9085682099128250399, guid: 1a6511e6fdd7e89b481fff3e211b1928, type: 3}
     - target: {fileID: 7235246610669261704, guid: 66d1416e74ffdd75a8b256de74270d0c, type: 3}
       propertyPath: 'vriekPoses.Array.data[8]'
       value: 
@@ -2562,7 +2562,7 @@ PrefabInstance:
       objectReference: {fileID: -7427728680982266421, guid: 1a6511e6fdd7e89b481fff3e211b1928, type: 3}
     - target: {fileID: 7235246610669261704, guid: 66d1416e74ffdd75a8b256de74270d0c, type: 3}
       propertyPath: avaxDialogBeats.Array.size
-      value: 16
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7235246610669261704, guid: 66d1416e74ffdd75a8b256de74270d0c, type: 3}
       propertyPath: 'avaxDialogBeats.Array.data[0]'
@@ -2594,11 +2594,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7235246610669261704, guid: 66d1416e74ffdd75a8b256de74270d0c, type: 3}
       propertyPath: englishDialogBeats.Array.size
-      value: 16
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7235246610669261704, guid: 66d1416e74ffdd75a8b256de74270d0c, type: 3}
       propertyPath: englishResponseBeats.Array.size
-      value: 16
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7235246610669261704, guid: 66d1416e74ffdd75a8b256de74270d0c, type: 3}
       propertyPath: 'englishDialogBeats.Array.data[0]'
@@ -2606,7 +2606,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7235246610669261704, guid: 66d1416e74ffdd75a8b256de74270d0c, type: 3}
       propertyPath: 'englishDialogBeats.Array.data[1]'
-      value: '*ackez'
+      value: '*czzkt'
       objectReference: {fileID: 0}
     - target: {fileID: 7235246610669261704, guid: 66d1416e74ffdd75a8b256de74270d0c, type: 3}
       propertyPath: 'englishDialogBeats.Array.data[2]'
@@ -2630,7 +2630,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7235246610669261704, guid: 66d1416e74ffdd75a8b256de74270d0c, type: 3}
       propertyPath: 'englishDialogBeats.Array.data[7]'
-      value: ...
+      value: Vriek
       objectReference: {fileID: 0}
     - target: {fileID: 7235246610669261704, guid: 66d1416e74ffdd75a8b256de74270d0c, type: 3}
       propertyPath: 'englishDialogBeats.Array.data[8]'
@@ -2690,11 +2690,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7235246610669261704, guid: 66d1416e74ffdd75a8b256de74270d0c, type: 3}
       propertyPath: 'englishResponseBeats.Array.data[6]'
-      value: Hi...
+      value: Hi... Whats your name?
       objectReference: {fileID: 0}
     - target: {fileID: 7235246610669261704, guid: 66d1416e74ffdd75a8b256de74270d0c, type: 3}
       propertyPath: 'englishResponseBeats.Array.data[7]'
-      value: What are you?
+      value: ...
       objectReference: {fileID: 0}
     - target: {fileID: 7235246610669261704, guid: 66d1416e74ffdd75a8b256de74270d0c, type: 3}
       propertyPath: 'englishResponseBeats.Array.data[8]'
@@ -3985,7 +3985,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &2065060267
 SpriteRenderer:
   serializedVersion: 2
@@ -4033,7 +4033,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 1000
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

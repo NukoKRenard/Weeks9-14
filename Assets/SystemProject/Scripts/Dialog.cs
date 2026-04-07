@@ -55,8 +55,6 @@ public class Dialog : MonoBehaviour
 	
 	   userResponded = false;
 	   }
-	   yield return new WaitForSeconds(2);
-
 	   gameObject.SetActive(false);
 	   charachter.SetActive(false);	   
     }

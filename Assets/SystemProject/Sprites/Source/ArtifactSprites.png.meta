@@ -152,9 +152,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 131
-        y: 353
-        width: 210
-        height: 328
+        y: 347
+        width: 216
+        height: 334
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,10 +173,10 @@ TextureImporter:
       name: ArtifactSprites_2
       rect:
         serializedVersion: 2
-        x: 425
-        y: 347
-        width: 223
-        height: 341
+        x: 438
+        y: 345
+        width: 210
+        height: 333
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

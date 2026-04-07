@@ -7,6 +7,8 @@ public class GoalTreeBranch : MonoBehaviour
     public SpriteRenderer myGoal;
     public Sprite completedSprite;
     private bool firstComplete = true;
+    public bool hideWhenGoalReached = true;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,7 +17,14 @@ public class GoalTreeBranch : MonoBehaviour
 
     //If the object is complete hide the object.
     public void acknowledgeCompletion() {
-	   gameObject.SetActive(false); 
+	    if (hideWhenGoalReached)
+	    {
+		    gameObject.SetActive(false); 
+	    }
+    }
+
+    public void stateFullyAssembled() {
+	    gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -41,6 +50,11 @@ public class GoalTreeBranch : MonoBehaviour
 	if (allComplete && myGoal.bounds.Contains(transform.position))
 	{
 		completed = true;
+
+		foreach (GoalTreeBranch branch in childNodes)
+		{
+			branch.stateFullyAssembled();
+		}
 	}
 	if (completedSprite != null && allComplete && firstComplete)
 		{

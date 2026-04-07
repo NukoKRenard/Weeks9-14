@@ -26,6 +26,7 @@ public class AssemblyScene : MonoBehaviour
     {
     }
 
+    //Allows the cursor to move the objects.
     public void AssembleComponents(Vector2 interactionPosition,bool downThisFrame) {
 	if (selectedComponent == null && downThisFrame)
 	{
@@ -33,16 +34,19 @@ public class AssemblyScene : MonoBehaviour
 		{	
 		   if (item.GetComponent<SpriteRenderer>().bounds.Contains(interactionPosition) && item.activeInHierarchy)
 		   {
+			   //Once a selected item is found then set it to active.
 			   selectedComponent = item;
 			   break;
 		   }	   
 		}	
 	}
+	//If there is an active object and the user clicks, drop it.
 	else if (downThisFrame)
 	{
 		selectedComponent = null;
 	}
 
+	//If there is a selected object, put it at the same position as the mouse.
 	if (selectedComponent != null)
 	{
 		selectedComponent.transform.position = interactionPosition;
@@ -55,17 +59,22 @@ public class AssemblyScene : MonoBehaviour
     {
 	    clickedThisFrame = false;
 
+	    //If the goal is completed, then start the dialog.
 	    if (goalRoot.completed && completedThisFrame)
 	    {
 		    completedThisFrame = false;
-		    cutsceneCoroutine = StartCoroutine(DialogOpeningCutscene(false));
+		    StartCoroutine(DialogOpeningCutscene(false));
 	    }
     }
 
+    //This coroutine manages the dialog of the charachter and the cutscene.
     IEnumerator DialogOpeningCutscene(bool skipCutscene) {
+	    
 	    if (!skipCutscene)
 	    {
-		    yield return StartCoroutine(Flash());
+		    yield return new WaitForSeconds(2);
+		    cutsceneCoroutine = StartCoroutine(Flash());
+		    yield return cutsceneCoroutine;
 		    Debug.Log("Coroutine over");
 	    }
 	    //In case the skip cutscene coroutine is stopped.
@@ -77,6 +86,7 @@ public class AssemblyScene : MonoBehaviour
 	    Debug.Log("Dialog complete!");
     }
 
+    //The reason this is a function instead of using a string is a personal preference. I prefer not to use strings to select items as a misspelling could result in undefined behavior.
     public void CancelCutscene() {
 	    //If the user skips the cutscene, restart the dialog without the cutscene at the beginning.
 	    StopCoroutine(cutsceneCoroutine); 
@@ -84,6 +94,7 @@ public class AssemblyScene : MonoBehaviour
 	    cutsceneCoroutine = StartCoroutine(DialogOpeningCutscene(true));
     }
 
+    //Flashes the sprite light on and off.
     IEnumerator Flash() {
 	    skipButton.SetActive(true); 
 

@@ -15,8 +15,12 @@ public class Cursor : MonoBehaviour
         
     }
 
+    //Do this on move.
     public void MoveCursor(InputAction.CallbackContext movement) {
+	    //Set the cursor position to the mouse position.
 	    transform.position = (Vector2)Camera.main.ScreenToWorldPoint(movement.ReadValue<Vector2>());
+	    
+	    //Make sure the cursor stays in bounds.
 	    Vector2 bottomLeft = Camera.main.ScreenToWorldPoint(new Vector2(0,0));
 	    Vector2 topRight = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
 
@@ -39,6 +43,7 @@ public class Cursor : MonoBehaviour
 	    }
     }
 
+    //On click
     public void interactWithItem(InputAction.CallbackContext click)
     {
 	    if (click.performed)
@@ -55,6 +60,7 @@ public class Cursor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+	   //If the player is interacting, call the child interaction function.
 	   if (interacting)
 	   {
 		   sceneInteraction.Invoke(transform.position,false);

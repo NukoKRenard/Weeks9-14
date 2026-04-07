@@ -5,7 +5,8 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Dialog : MonoBehaviour
-{
+{  
+    //Objects to update with the  dialog.
     public GameObject charachter;	
     public Image avaxDialog;
     public SpriteRenderer vriek;
@@ -19,7 +20,7 @@ public class Dialog : MonoBehaviour
     public List<Sprite> vriekPoses;
     public List<string> englishDialogBeats;
     public List<string> englishResponseBeats;
-    // Start is called once before the first execution 0f update after the MonoBehaviour is created
+
     public bool userResponded = false;
     
     void Start()
@@ -27,11 +28,12 @@ public class Dialog : MonoBehaviour
         
     }
 
+    //Sets the user respond flag to true.
     public void Respond() {
            userResponded = true; 
     }
-    //Why is this a coroutine? Because I want the marks.
-    //(Also it lets me more easily create an ends screen when dialog ends)
+
+    //The reason this is a coroutine is because it lets me better time the cutscenes.
     public IEnumerator playDialog() {
 	    charachter.SetActive(true);
 	    Debug.Log("StartingDialog");

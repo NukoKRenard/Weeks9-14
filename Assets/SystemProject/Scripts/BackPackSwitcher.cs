@@ -15,10 +15,12 @@ public class BackPackSwitcher : MonoBehaviour
         
     }
 
+    //When the backpack buttin is switched, load the new game object and switch the cursor interaction function.
     public void switchScenes() {
 	    switchFunctions[uiSwitcher].Invoke();
 	    cursor.sceneInteraction = interactionFunction[uiSwitcher];
 
+	    //I use modulus here to get the index to loop back depending on the amount of scenes. Although its not required for this project, it is more scalable.
 	    uiSwitcher = (int)(uiSwitcher+1)%switchFunctions.Count;
     }
 

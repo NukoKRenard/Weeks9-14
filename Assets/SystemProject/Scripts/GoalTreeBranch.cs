@@ -6,6 +6,7 @@ public class GoalTreeBranch : MonoBehaviour
     public List<GoalTreeBranch> childNodes;
     public SpriteRenderer myGoal;
     public Sprite completedSprite;
+    private bool firstComplete = true;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -32,7 +33,6 @@ public class GoalTreeBranch : MonoBehaviour
 
 	if (allComplete && myGoal.bounds.Contains(transform.position))
 	{
-                Debug.Log("Completed part");		
 		completed = true;
 	}
 	if (allComplete) 
@@ -43,10 +43,10 @@ public class GoalTreeBranch : MonoBehaviour
 			branch.acknowledgeCompletion(); 
 		}
 	}
-	if (completedSprite != null && allComplete)
+	if (completedSprite != null && allComplete && firstComplete)
 		{
 			GetComponent<SpriteRenderer>().sprite = completedSprite;
-			Debug.Log("changingSprite!");
+			firstComplete = false;
 		}
 
     }
